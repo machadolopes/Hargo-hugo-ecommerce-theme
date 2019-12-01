@@ -27,11 +27,8 @@
         </div>
         <h5>Sinopse</h5>
         <p>{{ .Params.ShortDescription | markdownify }}</p>
-        <button class="snipcart-add-item btn btn-primary" data-item-id="{{ .Params.ProductID }}"
-          data-item-name="{{ .Title }}" {{ range first 1 .Params.Images }} data-item-image="{{ .image | absURL }}"
-          {{ end }} data-item-price="{{ .Params.Price }}" data-item-url="{{ .Permalink }}">
-          Comprar
-        </button>
+        <a href="{{ .Params.linkComprar }}"><button class="btn btn-sm btn-outline-primary">Comprar</button></a>
+
       </div>
       <div class="col-12 mt-5">
         <ul class="nav nav-tabs border-bottom-0" id="myTab" role="tablist">

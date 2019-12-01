@@ -179,14 +179,15 @@
             <p>{{ .Params.Description }}</p>
             <div class="mb-4">
               <span class="lead text-primary">{{ .Params.Price }}</span>
-              <s>{{ .Params.PriceBefore }}</s>
+              <!-- <s>{{ .Params.PriceBefore }}</s> -->
             </div>
-            <button class="snipcart-add-item btn btn-sm btn-outline-primary" data-item-id="{{ .Params.ProductID }}"
+            <!-- <button class="snipcart-add-item btn btn-sm btn-outline-primary" data-item-id="{{ .Params.ProductID }}"
               data-item-name="{{ .Title }}" {{ range first 1 .Params.Images }} data-item-image="{{ .image | absURL }}"
               {{ end }} data-item-price="{{ .Params.Price }}" data-item-url="{{ .Permalink }}">
-              Add to cart
-            </button>
-          </div>
+              Comprar
+            </button> -->
+            <a href="{{ .Params.linkComprar }}"><button class="btn btn-sm btn-outline-primary">Comprar</button></a>
+            </div>
         </div>
       </div>
       {{ end }}

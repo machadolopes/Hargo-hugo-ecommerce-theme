@@ -6,7 +6,7 @@
             alt="{{ .Site.Title }}"></a>
       </div>
       <div class="col-md-3 col-sm-6">
-        <h6 class="font-weight-medium mb-4">Important Links</h6>
+        <h6 class="font-weight-medium mb-4">Links</h6>
         <ul class="list-unstyled">
           {{ range .Site.Menus.footer }}
           <li class="mb-3"><a class="text-color" href="{{ .URL | absURL }}"><small>{{ .Name }}</small></a></li>
@@ -14,7 +14,7 @@
         </ul>
       </div>
       <div class="col-md-4 col-sm-6">
-        <h6 class="font-weight-medium mb-4">Connect With Us</h6>
+        <h6 class="font-weight-medium mb-4">Contacto</h6>
         <ul class="list-unstyled mb-5">
           <li class="mb-3"><a class="text-color" href="tel:{{ .Site.Params.mobile }}"><i
                 class="ti-mobile text-primary mr-2"></i>
@@ -32,7 +32,7 @@
         </ul>
       </div>
       <div class="col-lg-4 col-md-5">
-        <h6 class="font-weight-medium mb-4">Contact us</h6>
+        <h6 class="font-weight-medium mb-4">Contacto</h6>
         <form action="{{ .Site.Params.contact.formAction }}" method="POST">
           <input type="text" class="form-control mb-2" id="name" name="name" placeholder="Your Name">
           <input type="email" class="form-control mb-2" id="email" name="email" placeholder="Your Email">

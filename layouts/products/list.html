@@ -20,11 +20,12 @@
               <span class="lead text-primary">{{ .Params.Price }}</span>
               <!--<s>{{ .Params.PriceBefore }}</s> retira preço antes -->
             </div>
-            <button class="snipcart-add-item btn btn-sm btn-outline-primary" data-item-id="{{ .Params.ProductID }}"
+            <a href="{{ .Params.linkComprar }}"><button class="btn btn-sm btn-outline-primary">Comprar</button></a>
+            <!--<button class="snipcart-add-item btn btn-sm btn-outline-primary" data-item-id="{{ .Params.ProductID }}"
               data-item-name="{{ .Title }}" {{ range first 1 .Params.Images }} data-item-image="{{ .image | absURL }}"
               {{ end }} data-item-price="{{ .Params.Price }}" data-item-url="{{ .Permalink }}">
               Add to cart
-            </button>
+            </button> -->
           </div>
         </div>
       </div>

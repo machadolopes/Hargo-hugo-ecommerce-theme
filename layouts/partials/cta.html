@@ -6,7 +6,7 @@
     <div class="row">
       <div class="col-lg-8 col-md-7">
         <h2 class="text-white">{{ .title | markdownify }}</h2>
-        <p class="text-white">{{ .content | markdownify }}</p>
+        <p><h4 class="text-white">{{ .content | markdownify }}</h4></p>
         {{ with .button }}
         <a href="{{ .link | absURL }}" class="btn btn-light">{{ .label }}</a>
         {{ end }}

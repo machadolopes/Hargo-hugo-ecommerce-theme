@@ -24,7 +24,7 @@
 }
 
 .btn-primary {
-  background: $primary-gradient;
+  background: $primary-gradient-2;
   color: $white;
   border-color: $primary-color;
 
@@ -32,7 +32,7 @@
   &:hover,
   &.focus,
   &.active {
-    background: $primary-gradient !important;
+    background: $primary-gradient-2 !important;
     border-color: $primary-color !important;
   }
 }
